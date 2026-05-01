@@ -1,6 +1,6 @@
-# Alex Johnson - Full Stack Developer Portfolio
+# Sahan Danushka - Full Stack Developer Portfolio
 
-A modern, fully-animated single-page portfolio website built with Next.js, GSAP, Three.js, and Framer Motion.
+A modern, fully-animated single-page portfolio website built with Next.js, GSAP, Three.js, and advanced scroll animations.
 
 ## 🚀 Features
 
@@ -18,14 +18,18 @@ A modern, fully-animated single-page portfolio website built with Next.js, GSAP,
 - **Contact Section** - Floating geometric shapes (Icosahedron, Torus, Octahedron)
 
 ### Sections
-1. **Loading Screen** - Full GSAP orchestrated with particle burst
-2. **Hero** - Particle background, typewriter effect, magnetic buttons
-3. **About** - Animated stats counter, parallax orbs, rotating avatar border
-4. **Skills** - 3D rotating globe, categorized skill pills
-5. **Projects** - 3D tilt cards, filter tabs with Flip animations
-6. **Experience** - SVG timeline with scroll-triggered reveals
-7. **Contact** - Form with floating labels, validation, 3D background
-8. **Footer** - Social links, back to top button
+1. **Hero** - Parallax text layers ("Sahan" & "Danushka") with central image reveal
+2. **About** - Pinned scroll experience with sequential animations:
+   - Hero word reveal ("About")
+   - Intro statement ("I build web and mobile apps")
+   - Massive text statements ("Full Stack Developer", "Building products since 2018")
+   - Tech stack showcase with 18 technology icons
+   - Animated stats counters (Years, Projects, Coffee)
+3. **Projects** - Project showcase with filters
+4. **Experience** - Work timeline with scroll reveals
+5. **Skills** - Interactive skills display
+6. **Contact** - Contact form with validation
+7. **Footer** - Social links and navigation
 
 ### Interactive Features
 - Custom animated cursor (desktop only)
@@ -38,14 +42,26 @@ A modern, fully-animated single-page portfolio website built with Next.js, GSAP,
 
 ## 🛠️ Tech Stack
 
-- **Framework:** Next.js 13 (App Router)
+### Portfolio Built With
+- **Framework:** Next.js 16 (App Router)
 - **Language:** TypeScript
 - **Styling:** Tailwind CSS
-- **Animations:** GSAP (ScrollTrigger, SplitText, TextPlugin, Flip), Framer Motion
-- **3D Graphics:** Three.js, @react-three/fiber, @react-three/drei
-- **Smooth Scroll:** Lenis
-- **Forms:** React Hot Toast
-- **Icons:** React Icons
+- **Animations:** GSAP (ScrollTrigger, Core), Lenis
+- **3D Graphics:** Three.js
+- **Forms:** React Hook Form, EmailJS
+- **Icons:** React Icons (Simple Icons)
+- **UI Components:** Radix UI
+
+### My Professional Stack
+**Frontend:** TypeScript, React, Next.js, Tailwind CSS, Vite, Three.js, GSAP
+
+**Mobile:** Flutter, Kotlin
+
+**Backend:** Java, Spring Boot, Node.js, Express.js, C#, Python
+
+**Database:** MySQL, MongoDB
+
+**Cloud:** Google Cloud Platform (GCP)
 
 ## 📦 Installation
 
@@ -73,32 +89,28 @@ To enable the contact form with EmailJS:
 
 1. Sign up at [EmailJS](https://emailjs.com)
 2. Create a service and email template
-3. Update the configuration in `components/sections/Contact.tsx`:
-
-```typescript
-// Replace these values:
-Service ID:  "your_service_id"
-Template ID: "your_template_id"
-Public Key:  "your_public_key"
-```
+3. Update the configuration in `lib/emailjs.ts` with your credentials
 
 ## 🎨 Customization
-
-### Colors
-The primary gradient colors can be customized in the files:
-- Primary: `#4fa8d8` (Cyan)
-- Secondary: `#1a8a6e` (Teal)
 
 ### Content
 Update these files to customize your content:
 - `/data/projects.ts` - Your projects
 - `/data/skills.ts` - Your skills
 - `/data/experience.ts` - Your work experience
+- `/components/sections/About.tsx` - Tech stack icons and stats
 
 ### Personal Info
 Update in the component files:
-- Name/Logo: `components/ui/Navbar.tsx`, `components/ui/LoadingScreen.tsx`
+- Name: `components/sections/Hero.tsx` and `components/sections/About.tsx`
 - Contact details: `components/sections/Contact.tsx`
+- Tech stack: Add your icons in `components/sections/About.tsx` (Stage 4)
+
+### Images
+Place custom images in the `/public` folder:
+- `/public/me.png` - Your profile photo
+- `/public/java.png` - Java icon (if customizing)
+- `/public/Csharp.png` - C# icon (if customizing)
 - Social links: `components/sections/Footer.tsx`
 
 ## 🚀 Performance
@@ -129,12 +141,12 @@ MIT License - feel free to use this template for your own portfolio!
 
 ## 🙏 Credits
 
-Built with passion by Alex Johnson
+Built with passion by Sahan Danushka
 - Design & Development: Custom implementation
-- 3D Assets: Three.js primitives
-- Images: Unsplash
+- Technologies: TypeScript, React, Next.js, Tailwind CSS, GSAP, Three.js
+- Icons: React Icons (Simple Icons)
 
 ---
 
-**Note:** This is a fully functional portfolio template. Customize it with your own content, colors, and branding to make it yours!
+**Portfolio of Sahan Danushka** - Full Stack Developer specializing in Web & Mobile Applications
 
